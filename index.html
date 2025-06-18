@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kenji Liu | Data Projects Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenji Liu | Data Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #1e2a38;
+      background-color: #0d47a1;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    .projects {
+    main {
+      padding: 2rem 5%;
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.5rem;
     }
     .project {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1.5rem;
+      padding: 1rem;
       margin-bottom: 1.5rem;
-    }
-    .project h2 {
-      margin-top: 0;
-      color: #1e2a38;
-    }
-    .project p {
-      margin-bottom: 0.8rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     .project a {
-      color: #007acc;
+      display: inline-block;
+      margin-right: 1rem;
+      color: #0d47a1;
       text-decoration: none;
-      font-weight: bold;
+    }
+    .skills, .contact {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
     }
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #888;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Kenji Liu</h1>
-    <p>Data Analyst • Machine Learning Enthusiast • SQL & Python Developer</p>
+    <p>Software Engineer | Aspiring Data Scientist</p>
   </header>
 
-  <section class="projects">
-    <div class="project">
-      <h2>Fantasy Football Points Prediction</h2>
-      <p>Built a position-specific machine learning pipeline using feature engineering and hyperparameter tuning to predict fantasy football points. Trained a Random Forest model and deployed using pandas & scikit-learn.</p>
-      <a href="https://github.com/kenjiyanaba/fantasy_football_points_prediction" target="_blank">View on GitHub →</a>
-    </div>
+  <main>
+    <section class="about">
+      <h2>✨ About Me</h2>
+      <p>I'm a software engineer with a strong background in data engineering and ETL development. I enjoy building predictive models, streamlining data pipelines, and creating visual insights from complex datasets. My goal is to transition into a data science role where I can make a real impact through data-driven decisions.</p>
+    </section>
 
-    <div class="project">
-      <h2>Customer Churn Prediction</h2>
-      <p>A project analyzing customer behavior to predict churn using classification models.</p>
-      <a href="https://github.com/kenjiyanaba/churn-prediction" target="_blank">View on GitHub →</a>
-    </div>
-   
-  </section>
+    <section class="projects">
+      <h2>📊 Projects</h2>
+
+      <div class="project">
+        <h3>🏈 Fantasy Football Points Prediction</h3>
+        <p>Built machine learning models to predict PPR fantasy football points using player stats. Includes data wrangling, feature engineering, model evaluation, and visualizations.</p>
+        <a href="https://kenjiyanaba.github.io/fantasy_football_points_prediction/" target="_blank">Live Site</a>
+        <a href="https://github.com/kenjiyanaba/fantasy_football_points_prediction" target="_blank">GitHub Repo</a>
+      </div>
+
+      <div class="project">
+        <h3>🔄 Customer Churn Prediction</h3>
+        <p>Analyzed customer behavior data to predict churn using logistic regression, decision trees, and ensemble methods. Focused on feature selection and evaluation metrics like AUC and F1.</p>
+        <a href="https://github.com/kenjiyanaba/churn-prediction" target="_blank">GitHub Repo</a>
+      </div>
+
+    </section>
+
+    <section class="skills">
+      <h2>🛠️ Skills</h2>
+      <p><strong>Languages:</strong> Python, SQL, Java, R, HTML, CSS, JavaScript</p>
+      <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, XGBoost</p>
+      <p><strong>Tools:</strong> AWS Glue, Amazon S3, Excel, Git, Jupyter, PostgreSQL, IBM DB2 Database, Tableau</p>
+    </section>
+
+    <section class="contact">
+      <h2>📞 Contact</h2>
+      <p><strong>Email:</strong> kenjiyanabaliu@example.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/kenjiyanaba" target="_blank">github.com/kenjiyanaba</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kenji-liu/" target="_blank">linkedin.com/in/kenji-liu</a></p>
+      <p><strong>Resume:</strong> <a href="/KenjiLiu_Resume_2025.pdf" target="_blank">Download PDF</a></p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Kenji Liu All rights reserved.
+    &copy; 2025 Kenji Liu
   </footer>
 </body>
+
 </html>
